@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    m=len(s)
+    sanoq=0
+    i=0
+    while i<m:
+        if s[i].isalpha()==True:
+            sanoq+=1
+        i+=1
+    return sanoq
+print(main("shoxrux 6974"))
