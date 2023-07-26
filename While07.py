@@ -6,4 +6,15 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    raqam=len(s)
+    son=int(s)
+    i=0
+    sanoq=0
+    while i<raqam:
+        r=son%10
+        if r%2==0:
+            sanoq+=1
+        i+=1
+        son//=10
+    return sanoq
+print(main("56786543250"))
