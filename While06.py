@@ -7,3 +7,12 @@ def main(s):
     Returns:
         int: return answer
     """
+    sanoq=0
+    i=0
+    m=len(s)
+    while i<m:
+        if (s[i].isalpha()==True and s[i]!='a' and s[i]!='e' and s[i]!='i' and s[i]!='o' and s[i]!='u'):
+            sanoq+=1
+        i+=1
+    return sanoq
+print(main("abdseloni"))
