@@ -6,4 +6,15 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    sanoq=0
+    i=0
+    m=len(s)
+    son=int(s)
+    while i<m:
+        r=son%10
+        if(r%2==1):
+            sanoq+=1
+        i+=1
+        son//=10
+    return sanoq
+print(main("1567534"))
