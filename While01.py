@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    m = len(s)
+    i = 0
+    sanoq = 0
+    while i < m:
+        if s[i].isdigit() == True:
+            sanoq += 1
+        i += 1
+    return 
+print(main("python 2023"))
